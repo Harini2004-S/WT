@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e3f2fd;
+        }
+
+        h1 {
+            color: #1565c0;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        img {
+            border: 4px solid #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Map </h1>
+
+    <p>Click on the image</p>
+
+    <img src="E:\New folder\img.gif"
+         alt="Workplace"
+         usemap="#workmap"
+         width="400"
+         height="280">
+
+    <map name="workmap">
+
+        <!-- Computer area - Amazon -->
+        <area shape="rect"
+              coords="34,44,270,350"
+              href="https://www.amazon.in"
+              target="_blank"
+              alt="Amazon">
+
+        <!-- Phone area - Flipkart -->
+        <area shape="rect"
+              coords="290,172,333,250"
+              href="https://www.flipkart.com"
+              target="_blank"
+              alt="Flipkart">
+
+    </map>
+
+</body>
+</html>

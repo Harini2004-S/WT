@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>AngularJS Input Validation</title>
+
+    <!-- AngularJS Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            text-align: center;
+        }
+
+        .box {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body ng-controller="formController">
+
+    <div class="box">
+
+        <h1>Registration Form</h1>
+
+        <form name="myForm" ng-submit="submitForm()" novalidate>
+
+            <input type="text"
+                   name="name"
+                   ng-model="user.name"
+                   placeholder="Enter your name"
+                   required>
+
+            <p class="error"
+               ng-show="myForm.name.$touched && myForm.name.$error.required">
+               Name is required
+            </p>
+
+
+            <input type="email"
+                   name="email"
+                   ng-model="user.email"
+                   placeholder="Enter your email"
+                   required>
+
+            <p class="error"
+               ng-show="myForm.email.$touched && myForm.email.$error.required">
+               Email is required
+            </p>
+
+            <p class="error"
+               ng-show="myForm.email.$touched && myForm.email.$error.email">
+               Enter a valid email
+            </p>
+
+
+            <input type="password"
+                   name="password"
+                   ng-model="user.password"
+                   placeholder="Enter password"
+                   ng-minlength="6"
+                   required>
+
+            <p class="error"
+               ng-show="myForm.password.$touched && myForm.password.$error.required">
+               Password is required
+            </p>
+
+            <p class="error"
+               ng-show="myForm.password.$touched && myForm.password.$error.minlength">
+               Password must contain at least 6 characters
+            </p>
+
+
+            <button type="submit"
+                    ng-disabled="myForm.$invalid">
+                Submit
+            </button>
+
+            <p class="success" ng-show="submitted">
+                Form submitted successfully!
+            </p>
+
+        </form>
+
+    </div>
+
+
+    <script>
+        var app = angular.module("myApp", []);
+
+        app.controller("formController", function($scope) {
+
+            $scope.user = {};
+
+            $scope.submitForm = function() {
+                $scope.submitted = true;
+            };
+
+        });
+    </script>
+
+</body>
+</html>

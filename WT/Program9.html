@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide Paragraph using jQuery</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e3f2fd;
+            padding: 50px;
+        }
+
+        .box {
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#hide").click(function() {
+                $("#para").hide();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>jQuery Hide Example</h1>
+
+        <p id="para">
+            Web technology refers to the various tools, programming languages, frameworks, and techniques used to create, develop, maintain, and access websites and web applications. It includes technologies such as HTML, CSS, JavaScript, databases, web servers, and programming languages like PHP, Python, and Java. HTML is used to create the structure of a webpage, while CSS is used to design and style its appearance. JavaScript is used to add interactivity and dynamic features to web pages. Server-side technologies process user requests and communicate with databases to store and retrieve information. Modern web technology also includes APIs, cloud computing, responsive design, web security, and Full Stack Development, which together help developers build fast, interactive, secure, and user-friendly web applications.
+        </p>
+
+        <button id="hide">Hide Paragraph</button>
+
+    </div>
+
+</body>
+</html>

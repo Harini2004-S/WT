@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Types of CSS</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #e3f2fd;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1565c0;
+            font-size: 35px;
+        }
+
+        .internal {
+            color: green;
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Types of CSS</h1>
+
+    <div class="box">
+
+        <!-- Inline CSS -->
+        <h2 style="color: red; font-family: Arial;">
+            Inline CSS
+        </h2>
+
+        <p style="color: #d84315; font-size: 18px;">
+            CSS is applied directly to an HTML element
+            using the style attribute.
+        </p>
+
+
+        <!-- Internal CSS -->
+        <h2 class="internal">
+            Internal CSS
+        </h2>
+
+        <p>
+            CSS is written inside the &lt;style&gt; tag
+            in the head section of the HTML document.
+        </p>
+
+
+        <!-- External CSS -->
+        <h2 class="external">
+            External CSS
+        </h2>
+
+        <p>
+            CSS is written in a separate CSS file and
+            linked with the HTML document.
+        </p>
+
+    </div>
+
+</body>
+</html>

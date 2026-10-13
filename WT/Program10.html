@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse and Form Events</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box {
+            width: 500px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        #mouseBox {
+            background-color: #bbdefb;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 80%;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+
+        // Mouse Events
+        function mouseOver() {
+            document.getElementById("mouseBox").innerHTML =
+                "Mouse is Over the Box";
+        }
+
+        function mouseOut() {
+            document.getElementById("mouseBox").innerHTML =
+                "Mouse is Out of the Box";
+        }
+
+        function mouseClick() {
+            document.getElementById("mouseBox").innerHTML =
+                "Mouse Clicked!";
+        }
+
+        // Form Events
+        function formSubmit() {
+            alert("Form Submitted Successfully!");
+        }
+
+        function formReset() {
+            alert("Form has been Reset!");
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Mouse and Form Events</h1>
+
+        <!-- Mouse Events -->
+        <h2>Mouse Events</h2>
+
+        <div id="mouseBox"
+             onmouseover="mouseOver()"
+             onmouseout="mouseOut()"
+             onclick="mouseClick()">
+
+            Move the mouse here or click me
+
+        </div>
+
+        <!-- Form Events -->
+        <h2>Form Events</h2>
+
+        <form onsubmit="formSubmit()"
+              onreset="formReset()">
+
+            <input type="text"
+                   placeholder="Enter your name"
+                   required>
+
+            <br>
+
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
