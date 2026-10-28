@@ -1,145 +1,60 @@
-library {
+college {
     display: block;
-    background-color: #f3f6fb;
+    background: linear-gradient(to right, #dbeafe, #f3e8ff);
     padding: 30px;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
+    text-align: center;
 }
 
-/* Header */
-
-header {
+heading {
     display: block;
-    background-color: #263238;
-    color: white;
     text-align: center;
-    padding: 30px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-bottom: 25px;
+}
+
+student {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    background-color: white;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    border-left: 6px solid #8b5cf6;
     border-radius: 12px;
 }
 
-header title {
+name {
     display: block;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-header subtitle {
-    display: block;
-    font-size: 18px;
-    margin-top: 10px;
-    color: #b3e5fc;
-}
-
-/* Books - Horizontal */
-
-books {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-/* Individual Book */
-
-book {
-    display: block;
-    background-color: white;
-    padding: 20px;
-    border-left: 5px solid #1565c0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px #b0bec5;
-}
-
-/* Book ID and Category */
-
-book::before {
-    content: "Book ID: " attr(id) " | Category: " attr(category);
-    display: block;
-    color: #78909c;
-    font-size: 13px;
-    margin-bottom: 10px;
-}
-
-/* Book Title */
-
-book title {
-    display: block;
+    color: #6d28d9;
     font-size: 24px;
     font-weight: bold;
-    color: #1565c0;
-    margin-bottom: 10px;
-}
-
-/* Author */
-
-author {
-    display: block;
-    font-size: 17px;
-    color: #6a1b9a;
     margin-bottom: 12px;
 }
 
-/* Price */
-
-price {
-    display: inline-block;
-    background-color: #e8f5e9;
-    color: #2e7d32;
-    padding: 7px 10px;
-    margin: 3px;
-    border-radius: 5px;
-    font-weight: bold;
+department {
+    display: block;
+    color: #2563eb;
+    margin: 8px;
 }
-
-/* Year */
 
 year {
-    display: inline-block;
-    background-color: #fff3e0;
-    color: #e65100;
-    padding: 7px 10px;
-    margin: 3px;
-    border-radius: 5px;
-}
-
-/* Pages */
-
-pages {
-    display: inline-block;
-    background-color: #e3f2fd;
-    color: #1565c0;
-    padding: 7px 10px;
-    margin: 3px;
-    border-radius: 5px;
-}
-
-/* Language */
-
-language {
-    display: inline-block;
-    background-color: #f3e5f5;
-    color: #7b1fa2;
-    padding: 7px 10px;
-    margin: 3px;
-    border-radius: 5px;
-}
-
-/* Status */
-
-status {
     display: block;
-    color: #2e7d32;
-    font-weight: bold;
-    margin-top: 12px;
+    color: #059669;
+    margin: 8px;
 }
 
-/* Description */
-
-description {
+email {
     display: block;
-    margin-top: 15px;
-    padding: 12px;
-    background-color: #fafafa;
-    color: #455a64;
-    line-height: 1.5;
-    border-radius: 6px;
+    color: #db2777;
+    margin: 8px;
+}
+
+phone {
+    display: block;
+    color: #ea580c;
+    margin: 8px;
 }
