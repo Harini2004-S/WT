@@ -1,97 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 
-<library>
-    <header>
-        <title>My Digital Book Library</title>
-        <subtitle>Explore • Read • Learn • Grow</subtitle>
-    </header>
+<college>
+    <heading>College Student Profiles</heading>
 
-    <books>
+    <student>
+        <name>Harini</name>
+        <department>Computer Applications</department>
+        <year>First Year MCA</year>
+        <email>harini@gmail.com</email>
+        <phone>9876543210</phone>
+    </student>
 
-        <book id="B001" category="Fantasy" rating="4.9">
-            <title>Harry Potter</title>
-            <author>J.K. Rowling</author>
-            <price currency="INR">500</price>
-            <year>1997</year>
-            <pages>309</pages>
-            <language>English</language>
-            <status>Available</status>
-            <description>
-                A magical adventure about friendship, courage, and the battle
-                between good and evil.
-            </description>
-        </book>
+    <student>
+        <name>Priya</name>
+        <department>Computer Science</department>
+        <year>Second Year MCA</year>
+        <email>priya@gmail.com</email>  
+        <phone>9876543211</phone>
+    </student>
 
-        <book id="B002" category="Fiction" rating="4.7">
-            <title>The Alchemist</title>
-            <author>Paulo Coelho</author>
-            <price currency="INR">350</price>
-            <year>1988</year>
-            <pages>208</pages>
-            <language>English</language>
-            <status>Available</status>
-            <description>
-                A philosophical story about following your dreams and discovering
-                your true purpose in life.
-            </description>
-        </book>
+    <student>
+        <name>Riya</name>
+        <department>Maths</department>
+        <year>Second Year MCA</year>
+        <email>riya@gmail.com</email>  
+        <phone>9876543211</phone>
+    </student>
 
-        <book id="B003" category="Biography" rating="4.8">
-            <title>Wings of Fire</title>
-            <author>A.P.J. Abdul Kalam</author>
-            <price currency="INR">400</price>
-            <year>1999</year>
-            <pages>180</pages>
-            <language>English</language>
-            <status>Available</status>
-            <description>
-                The inspiring autobiography of India's renowned scientist and
-                former President, Dr. A.P.J. Abdul Kalam.
-            </description>
-        </book>
+    <student>
+        <name>Iniya</name>
+        <department>Zoology</department>
+        <year>Second Year MCA</year>
+        <email>iniya@gmail.com</email>  
+        <phone>9876543211</phone>
+    </student>
 
-        <book id="B004" category="Classic" rating="4.6">
-            <title>1984</title>
-            <author>George Orwell</author>
-            <price currency="INR">450</price>
-            <year>1949</year>
-            <pages>328</pages>
-            <language>English</language>
-            <status>Limited</status>
-            <description>
-                A powerful dystopian novel exploring surveillance, freedom,
-                truth, and political control.
-            </description>
-        </book>
+    <student>
+        <name>Maha</name>
+        <department>MCA</department>
+        <year>Second Year MCA</year>
+        <email>Maha@gmail.com</email>  
+        <phone>9876543211</phone>
+    </student>
 
-        <book id="B005" category="Self Help" rating="4.8">
-            <title>Atomic Habits</title>
-            <author>James Clear</author>
-            <price currency="INR">550</price>
-            <year>2018</year>
-            <pages>320</pages>
-            <language>English</language>
-            <status>Available</status>
-            <description>
-                A practical guide to building good habits, breaking bad ones,
-                and making meaningful improvements every day.
-            </description>
-        </book>
-
-        <book id="B006" category="Science" rating="4.7">
-            <title>A Brief History of Time</title>
-            <author>Stephen Hawking</author>
-            <price currency="INR">600</price>
-            <year>1988</year>
-            <pages>256</pages>
-            <language>English</language>
-            <status>Available</status>
-            <description>
-                An accessible exploration of the universe, black holes, time,
-                space, and the origins of existence.
-            </description>
-        </book>
-
-    </books>
-</library>
+    <student>
+        <name>Shan</name>
+        <department>Computer Science</department>
+        <year>Second Year MCA</year>
+        <email>Shan@gmail.com</email>  
+        <phone>9876543211</phone>
+    </student>
+</college>
